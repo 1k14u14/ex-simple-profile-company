@@ -1,3 +1,9 @@
+:root {
+  --primary: #dcf2f1;
+  --secondary: #7fc7d9;
+  --thirdcolor: #365486;
+  --fourthcolor: #0f1035;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +12,14 @@
 }
 
 body {
-  background-color: #f3eeea;
+  background-color: var(--primary);
   overflow-x: hidden;
 }
 
 nav {
   width: 100vw;
   padding: 10px 20px;
-  color: #776b5d;
+  color: var(--fourthcolor);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -32,7 +38,7 @@ aside {
   right: -690px;
   height: 100vh;
   width: 50vw;
-  background-color: rgba(243, 238, 234, 0.9);
+  background-color: rgba(127, 199, 217, 0.9);
   transition: 0.5s ease-in-out;
 }
 
@@ -50,7 +56,7 @@ aside ul {
 }
 
 aside ul li a {
-  color: #776b5d;
+  color: var(--fourthcolor);
   text-decoration: none;
 }
 
@@ -71,11 +77,11 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: #776b5d;
+  color: var(--fourthcolor);
 }
 
 section:nth-child(even) {
-  background-color: #ebe3d5;
+  background-color: var(--secondary);
 }
 
 .home {
@@ -96,7 +102,7 @@ section:nth-child(even) {
   top: 100px;
   margin: 50px;
   padding: 20px;
-  color: #776b5d;
+  color: var(--fourthcolor);
   width: 50%;
   height: 40%;
   transition: all 0.2s ease-in-out;
@@ -106,19 +112,18 @@ section:nth-child(even) {
   margin-top: 20px;
   padding: 5px;
   border-radius: 5px;
-  background-color: #776b5d;
-  color: #ebe3d5;
+  background-color: var(--thirdcolor);
+  color: var(--primary);
   cursor: pointer;
-  box-shadow: 0 0 0 0 rgba(119, 107, 93, 0.9);
-  animation: button 1s ease-in-out infinite alternate;
+  animation: button 1s ease-in-out infinite alternate-reverse;
 }
 
 @keyframes button {
   from {
-    box-shadow: 0 0 0 0 rgba(119, 107, 93, 0.9);
+    box-shadow: 0 0 0 0 rgba(54, 84, 134, 0.9);
   }
   to {
-    box-shadow: 0 0 10px 5px rgba(119, 107, 93, 0.9);
+    box-shadow: 0 0 5px 2px rgba(54, 84, 134, 0.9);
   }
 }
 
@@ -134,7 +139,7 @@ section:nth-child(even) {
   width: 50%;
   padding: 40px 20px 0 20px;
   text-align: center;
-  color: #776b5d;
+  color: var(--fourthcolor);
 }
 
 .about img {
@@ -148,7 +153,7 @@ section:nth-child(even) {
 .testimoni h1 {
   text-align: center;
   padding: 70px 0;
-  color: #776b5d;
+  color: var(--fourthcolor);
 }
 
 .testimoni .blockcard {
@@ -161,7 +166,7 @@ section:nth-child(even) {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  box-shadow: 0 0 0 5px #f3eeea;
+  box-shadow: 0 0 0 5px var(--primary);
   object-fit: cover;
   object-position: top;
   position: absolute;
@@ -175,8 +180,8 @@ section:nth-child(even) {
   padding-top: 5px;
   padding-left: 60px;
   border-radius: 50px;
-  background-color: #776b5d;
-  color: #f3eeea;
+  background-color: var(--thirdcolor);
+  color: var(--primary);
 }
 
 .testimoni .blockcard .card .caption {
@@ -184,8 +189,8 @@ section:nth-child(even) {
   margin-bottom: 25px;
   width: 250px;
   border-radius: 10px;
-  background-color: rgb(235, 227, 213);
-  color: #776b5d;
+  background-color: var(--secondary);
+  color: var(--fourthcolor);
 }
 
 .project {
@@ -198,11 +203,10 @@ section:nth-child(even) {
 }
 
 .project h1 {
-  color: #776b5d;
+  color: var(--fourthcolor);
 }
 
 .outer-cont {
-  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +231,7 @@ section:nth-child(even) {
 
 .client {
   height: 100vh;
-  color: #776b5d;
+  color: var(--fourthcolor);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -274,7 +278,7 @@ section:nth-child(even) {
 
 .contact {
   height: 100vh;
-  color: #776b5d;
+  color: var(--fourthcolor);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -309,16 +313,16 @@ textarea:focus {
 .contact form button {
   padding: 5px;
   border-radius: 5px;
-  background-color: #776b5d;
-  color: #ebe3d5;
+  background-color: var(--thirdcolor);
+  color: var(--primary);
   cursor: pointer;
-  animation: button 1s ease-in-out infinite alternate;
+  animation: button 1s ease-in-out infinite alternate-reverse;
 }
 
 footer {
   padding: 5px 0;
-  background-color: #776b5d;
-  color: #ebe3d5;
+  background-color: var(--fourthcolor);
+  color: var(--primary);
   text-align: center;
 }
 
@@ -346,8 +350,8 @@ footer {
     left: -25px;
     width: 90%;
     overflow-y: hidden;
-    background-color: rgba(119, 107, 93, 0.9);
-    color: #ebe3d5;
+    background-color: rgba(127, 199, 217, 0.9);
+    color: var(--fourthcolor);
   }
 
   /* about */
