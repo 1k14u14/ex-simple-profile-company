@@ -28,7 +28,7 @@ nav .dropmenu {
 aside {
   display: none;
   padding-top: 50px;
-  position: absolute;
+  position: fixed;
   right: -690px;
   height: 100vh;
   width: 50vw;
@@ -194,6 +194,7 @@ section:nth-child(even) {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
 }
 
 .project h1 {
@@ -319,11 +320,6 @@ footer {
   background-color: #776b5d;
   color: #ebe3d5;
   text-align: center;
-}
-
-svg {
-  position: relative;
-  bottom: -10px;
 }
 
 @media only screen and (max-width: 768px) {
