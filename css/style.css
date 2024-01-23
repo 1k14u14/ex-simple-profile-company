@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
   scroll-behavior: smooth;
 }
 
@@ -19,7 +20,7 @@ body {
 nav {
   width: 100vw;
   padding: 10px 20px;
-  color: var(--fourthcolor);
+  color: var(--thirdcolor);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -163,8 +164,8 @@ section:nth-child(even) {
 }
 
 .testimoni .blockcard .card img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   box-shadow: 0 0 0 5px var(--primary);
   object-fit: cover;
@@ -174,7 +175,7 @@ section:nth-child(even) {
 
 .testimoni .blockcard .card .heroabout {
   width: 240px;
-  height: 50px;
+  height: 60px;
   margin-left: 10px;
   margin-bottom: 10px;
   padding-top: 5px;
